@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Breakfast Options</title>
 
     <!-- Including the main.css file for styling -->
     <link rel="stylesheet" href="css/main.css">
@@ -17,25 +19,29 @@
     <div class="topnav" id="myTopnav">
         <!-- Links to different sections -->
         <a href="index.html">Abstract</a>
-        <a href="section1.html">Section 1</a>
-
-        <!-- Active link pointing to the section2.html page -->
-        <a class="active" href="section2.html">Section 2</a>
-
-        <a href="section3.html">Section 3</a>
-        <a href="see_also.html">See Also</a>
+        <a class="active" href="section1.html">Sweet Breakfast</a>
+        <a href="section2.html">Savory Breakfast</a>
+        <a href="section3.html">Breakfast Beverages</a>
+        <a href="see_also.html">Breakfast Around the World</a>
         <a href="references.html">References</a>
-
+        
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
-        <a href="javascript:void(0);" class="icon">
+        <a href="javascript:void(0);" class="icon" onclick="responsive_control()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
 
     <!-- Page content -->
     <div class="content">
-        <!-- Section 2 content -->
-        This is section 2.
+        <!-- Savory Breakfast Options content -->
+        <h1>Savory Breakfast Foods</h1>
+        <img src="img/savory.jpg" alt="Savory Breakfast" style="width:75%; max-width:700px; height:auto;">
+        <ul>
+            <li>Scrambled eggs</li>
+            <li>Avocado toast</li>
+            <li>Omelettes</li>
+            <li>Breakfast burritos</li>
+        </ul>
     </div>
 
     <!-- Including the main.js file for JavaScript functionality -->
