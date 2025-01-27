@@ -10,14 +10,13 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-  border-top: none;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 8px;
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: seashell;
+  color: white;
   display: block;
   transition: 0.3s;
 }
@@ -37,7 +36,6 @@
 #main {
   transition: margin-left .5s;
   padding: 10px;
-  border-top: none;
 }
 
 div.scroll-container {
@@ -47,6 +45,7 @@ div.scroll-container {
   padding: 10px;
   display: flex; 
   gap: 10px; 
+  border-top: none; 
 }
 
 div.scroll-container img {
@@ -56,23 +55,19 @@ div.scroll-container img {
 }
 
 html, body {
-  margin: 0.5;
+  margin: 0;
   padding: 0;
 }
 
 /* Style for page content */
 .content {
-  padding: 10px;
+  padding: 14px;
   font-size: 25px;
   background-color: white;
-  border-top: none;
 }
 
 /* Center the main titles */
 h1 {
-  text-align: center;
-  font-size: 65px;
-  font-family: "Gill Sans", sans-serif;
   display: block;
   font-size: 2em;
   margin-block-start: 0;
@@ -81,13 +76,15 @@ h1 {
   margin-inline-end: 0px;
   font-weight: bold;
   unicode-bidi: isolate;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Gill Sans", sans-serif;
 }
 
 /* Ensure the rest of the text is left-aligned by default */
 body, p, ul, li {
   text-align: left;
   font-size: 25px;
-  background-color: white
   font-family: "Gill Sans", sans-serif;
 }
 
