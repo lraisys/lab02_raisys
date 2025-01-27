@@ -15,33 +15,39 @@
 
 <body>
 
-    <!-- Navigation bar -->
-    <div class="topnav" id="myTopnav">
-        <!-- Links to different sections -->
-        <a href="index.html">Abstract</a>
-        <a class="active" href="section1.html">Sweet Breakfast</a>
+    <!-- Sliding navigation bar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="section1.html">Sweet Breakfast</a>
         <a href="section2.html">Savory Breakfast</a>
         <a href="section3.html">Breakfast Beverages</a>
         <a href="see_also.html">Breakfast Around the World</a>
         <a href="references.html">References</a>
-        
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
-        <a href="javascript:void(0);" class="icon" onclick="responsive_control()">
-            <i class="fa fa-bars"></i>
-        </a>
     </div>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
     <!-- Page content -->
     <div class="content">
         <!-- Savory Breakfast Options content -->
         <h1>Savory Breakfast Foods</h1>
         <img src="img/savory.jpg" alt="Savory Breakfast" style="width:75%; max-width:700px; height:auto;">
+        <p>Savory breakfast foods are a hearty and satisfying way to fuel your morning, offering a delicious 
+            combination of flavors to kickstart the day.</p>
         <ul>
-            <li>Scrambled eggs</li>
-            <li>Avocado toast</li>
-            <li>Omelettes</li>
-            <li>Breakfast burritos</li>
+            <li><strong>Scrambled Eggs:</strong> Creamy and soft, scrambled eggs are a breakfast staple that can 
+                be enjoyed on their own or paired with toast and bacon.</li>
+            <li><strong>Avocado Toast:</strong> Rich and creamy avocado spread over toasted bread makes for a simple 
+                yet flavorful breakfast, often topped with a sprinkle of salt, pepper, or even a poached egg.</li>
+            <li><strong>Omelettes:</strong> Savory and versatile, omelettes can be filled with a variety of ingredients 
+                like cheese, veggies, and meats, making them perfect for any breakfast craving.</li>
+            <li><strong>Breakfast Burritos:</strong> Wrapped in a warm tortilla, breakfast burritos are packed with 
+                scrambled eggs, cheese, meats, and veggies for a satisfying, on-the-go meal.</li>              
         </ul>
+        <p>Savory breakfast options like scrambled eggs, omelettes, and breakfast burritos provide a hearty, satisfying way to fuel your day. 
+            They offer a variety of flavors and ingredients, catering to different tastes and preferences.</p>
     </div>
 
     <!-- Including the main.js file for JavaScript functionality -->

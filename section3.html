@@ -15,33 +15,39 @@
 
 <body>
 
-    <!-- Navigation bar -->
-    <div class="topnav" id="myTopnav">
-        <!-- Links to different sections -->
-        <a href="index.html">Abstract</a>
-        <a class="active" href="section1.html">Sweet Breakfast</a>
+    <!-- Sliding navigation bar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="section1.html">Sweet Breakfast</a>
         <a href="section2.html">Savory Breakfast</a>
         <a href="section3.html">Breakfast Beverages</a>
         <a href="see_also.html">Breakfast Around the World</a>
         <a href="references.html">References</a>
-
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
-        <a href="javascript:void(0);" class="icon" onclick="responsive_control()">
-            <i class="fa fa-bars"></i>
-        </a>
     </div>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
     <!-- Page content -->
     <div class="content">
         <!-- Breakfast Beverages content -->
         <h1>Breakfast Beverages</h1>
         <img src="img/coffee.jpg" alt="Coffee" style="width:70%; max-width:600px; height:auto;">
+        <p>Breakfast beverages are the perfect complement to your morning meal, whether you're in the 
+            mood for something energizing or refreshing.</p>
         <ul>
-            <li>Coffee</li>
-            <li>Juice</li>
-            <li>Smoothies</li>
-            <li>Milk</li>
+            <li><strong>Coffee:</strong> A steaming cup of coffee provides the perfect jolt of caffeine to 
+                kickstart your day and pairs wonderfully with both sweet and savory breakfast foods.</li>
+            <li><strong>Juice:</strong> Freshly squeezed or store-bought, a glass of juice, whether it is orange, 
+                apple, or a blend, brings a burst of fruity freshness to your morning routine.</li>
+            <li><strong>Smoothies:</strong> Blended with fruits, vegetables, and sometimes yogurt, smoothies are a 
+                nutritious and refreshing way to fuel up while on the go.</li>
+            <li><strong>Tea:</strong> A calming and caffeine-free option, herbal teas like chamomile or mint offer 
+                a soothing start to the day with light, refreshing flavors.</li>              
         </ul>
+        <p>Whether it's a rich cup of coffee, a refreshing smoothie, or a calming herbal tea, breakfast beverages are an essential part of the morning ritual. 
+            They complement your meal while providing the perfect balance of refreshment and energy.</p>
     </div>
 
     <!-- Including the main.js file for JavaScript functionality -->

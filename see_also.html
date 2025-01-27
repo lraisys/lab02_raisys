@@ -15,33 +15,36 @@
 
 <body>
 
-    <!-- Navigation bar -->
-    <div class="topnav" id="myTopnav">
-        <!-- Links to different sections -->
-        <a href="index.html">Abstract</a>
-        <a class="active" href="section1.html">Sweet Breakfast</a>
+    <!-- Sliding navigation bar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="section1.html">Sweet Breakfast</a>
         <a href="section2.html">Savory Breakfast</a>
         <a href="section3.html">Breakfast Beverages</a>
         <a href="see_also.html">Breakfast Around the World</a>
         <a href="references.html">References</a>
-
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
-        <a href="javascript:void(0);" class="icon" onclick="responsive_control()">
-            <i class="fa fa-bars"></i>
-        </a>
     </div>
+
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
     <!-- Page content -->
     <div class="content">
         <!-- Global Breakfast Trends content -->
         <h1>Global Breakfast Trends</h1>
-        <p>Different countries have unique breakfast traditions. </p>
-        <p>Here are a few examples...</p>
+        <p>Breakfast around the world offers a diverse and flavorful way to begin the day, with each 
+            culture bringing its own unique twist to morning meals.</p>
         <ul>
-            <li>In <strong>Japan</strong>, breakfast might include miso soup, rice, and fish.</li>
-            <li>In <strong>Mexico</strong>, dishes like chilaquiles or tamales are common for breakfast.</li>
-            <li>In <strong>Scotland</strong>, porridge (oatmeal) is a traditional morning food.</li>
+            <li><strong>Japan:</strong> A traditional Japanese breakfast often includes steamed rice, miso soup, 
+                grilled fish, and pickled vegetables, creating a savory, balanced start to the day.</li>
+            <li><strong>Mexico:</strong> In Mexico, breakfast may include hearty dishes like chilaquiles, which are fried 
+                tortillas topped with green or red sauce, eggs, and cheese, or a warm tamale paired with hot coffee.</li>
+            <li><strong>France:</strong> French breakfasts are often light and elegant, featuring fresh croissants, baguettes 
+                with butter and jam, and a café au lait to enjoy leisurely before starting the day.</li>          
         </ul>
+        <p>Breakfast traditions around the world showcase the diverse flavors and cultures that shape morning meals. 
+            From Japan’s savory rice dishes to Mexico’s flavorful chilaquiles, each country offers a unique and delicious start to the day.</p>
     </div>
 
     <!-- Including the main.js file for JavaScript functionality -->

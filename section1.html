@@ -15,33 +15,54 @@
 
 <body>
 
-    <!-- Navigation bar -->
-    <div class="topnav" id="myTopnav">
-        <!-- Links to different sections -->
-        <a href="index.html">Abstract</a>
-        <a class="active" href="section1.html">Sweet Breakfast</a>
+    <!-- Sliding navigation bar -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="section1.html">Sweet Breakfast</a>
         <a href="section2.html">Savory Breakfast</a>
         <a href="section3.html">Breakfast Beverages</a>
         <a href="see_also.html">Breakfast Around the World</a>
         <a href="references.html">References</a>
-
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
-        <a href="javascript:void(0);" class="icon" onclick="responsive_control()">
-            <i class="fa fa-bars"></i>
-        </a>
     </div>
 
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    
+    <div class="scroll-container">
+        <img src="img/bfast1.jpg" alt="Pancakes">
+        <img src="img/bfast2.jpg" alt="Waffles">
+        <img src="img/bfast3.jpg" alt="French Toast">
+        <img src="img/bfast.jpg" alt="Pastries">
+    </div>
+    
+   
     <!-- Page content -->
     <div class="content">
         <!-- Types of Breakfast Foods content -->
         <h1>Sweet Breakfast Foods</h1>
+         <div class="scroll-container">
+            <img src="img/bfast1.jpg" alt="Pancakes">
+            <img src="img/bfast2.jpg" alt="Waffles">
+            <img src="img/bfast3.jpg" alt="French Toast">
+            <img src="img/bfast.jpg" alt="Pastries">
+         </div>
         <img src="img/pancakes.jpg" alt="Pancakes" style="width:70%; max-width:600px; height:auto;">
+        <p>Sweet breakfast foods are the perfect way to start the day, 
+            offering a warm and comforting treat to satisfy your morning cravings.</p>
         <ul>
-            <li>Pancakes</li>
-            <li>Waffles</li>
-            <li>French toast</li>
-            <li>Pastries</li>
+            <li><strong>Pancakes:</strong> Fluffy and golden, pancakes are a classic breakfast favorite 
+                that can be topped with syrup, butter, and a variety of fruits.</li>
+            <li><strong>Waffles:</strong> Crispy on the outside and soft on the inside, waffles are delicious 
+                with a dusting of powdered sugar or drizzled with syrup.</li>
+            <li><strong>French Toast:</strong> Soft, buttery, and lightly spiced, French toast is a comforting 
+                breakfast dish that pairs beautifully with fresh berries or syrup.</li>
+            <li><strong>Pastries:</strong> Buttery and flaky, pastries like croissants or danishes make for a 
+                perfect indulgence with your morning coffee or tea.</li>              
         </ul>
+        <p>Sweet breakfast foods offer a warm, comforting way to start the day, from fluffy pancakes to flaky pastries. 
+            These treats can be customized with various toppings and flavors, making them perfect for any morning craving.</p>
     </div>
 
     <!-- Including the main.js file for JavaScript functionality -->
